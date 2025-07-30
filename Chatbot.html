@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Educational Institute</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our educational institute. We are dedicated to providing quality education to our students.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our institute has a long history of excellence in education.</p>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <p>We offer a wide range of courses designed to meet the needs of our diverse student body.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please feel free to reach out to us.</p>
+            <p>Email: info@educationinstitute.com</p>
+            <p>Phone: +123-456-7890</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Educational Institute. All rights reserved.</p>
+    </footer>
+
+    <div id="chatbot" onclick="toggleChat()">
+        <img src="chatbot.png" alt="Chatbot" height="100" width="100">
+        <div id="tooltip">Hi</div> <!-- Tooltip element -->
+    </div>
+
+    <div id="chatbox">
+        <div id="chatbox-header">
+            <img src="chatbot.png" alt="Logo">
+            <h3>ISbot</h3>
+            <div>
+                <button class="refresh-btn" onclick="clearUserMessages(event)">↻</button>
+                <button class="minimize-btn" onclick="minimizeChat(event)">−</button>
+            </div>
+        </div>
+        <div id="messages">
+            <div class="dropdown-container">
+                <select id="dropdown1" onchange="handleQuestionSelection('dropdown1')">
+                    <option value="" disabled selected>Admission Process</option>
+                    <option value="How can I apply to the college?">How can I apply to the college?</option>
+                    <option value="What is the application deadline?">What is the application deadline?</option>
+                    <option value="What are the admission requirements?">What are the admission requirements?</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <select id="dropdown2" onchange="handleQuestionSelection('dropdown2')">
+                    <option value="" disabled selected>Courses</option>
+                    <option value="What programs does the college offer?">What programs does the college offer?</option>
+                    <option value="Where can I find the course catalog?">Where can I find the course catalog?</option>
+                    <option value="What are the years of respective course?">What are the years of respective course?</option>
+                    <option value="Fees Structure of respective courses?">Fees Structure of respective courses?</option>
+                    <option value="Are there scholarships available?">Are there scholarships available?</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <select id="dropdown3" onchange="handleQuestionSelection('dropdown3')">
+                    <option value="" disabled selected>Contact Information</option>
+                    <option value="How can I contact the admissions office?">How can I contact the admissions office?</option>
+                    <option value="Where is the college located?">Where is the college located?</option>
+                    <option value="Is on-campus hostel facility available?">Is on-campus hostel facility available?</option>
+                    <option value="What are the campus facilities like?">What are the campus facilities like?</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <select id="dropdown4" onchange="handleQuestionSelection('dropdown4')">
+                    <option value="" disabled selected>Placements</option>
+                    <option value="What is the placement rate?">What is the placement rate?</option>
+                    <option value="Which companies visit the campus for placements?">Which companies visit the campus for placements?</option>
+                    <option value="What is the average salary package offered to MBA graduates?">What is the average salary package offered to MBA graduates?</option>
+                    <option value="Does the college provide placement assistance?">Does the college provide placement assistance?</option>
+                    <option value="What kind of internship opportunities are available?">What kind of internship opportunities are available?</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <select id="dropdown5" onchange="handleQuestionSelection('dropdown5')">
+                    <option value="" disabled selected>Extracurricular Activities</option>
+                    <option value="What extracurricular activities are available for MBA students?">What extracurricular activities are available for MBA students?</option>
+                    <option value="Does the college offer additional certification courses?">Does the college offer additional certification courses?</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <select id="dropdown6" onchange="handleQuestionSelection('dropdown6')">
+                    <option value="" disabled selected>Specializations</option>
+                    <option value="What specializations are offered in the MBA program?">What specializations are offered in the MBA program?</option>
+                    <option value="Can I choose more than one specialization?">Can I choose more than one specialization?</option>
+                    <option value="Is there an option for an executive MBA or part-time MBA?">Is there an option for an executive MBA or part-time MBA?</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
