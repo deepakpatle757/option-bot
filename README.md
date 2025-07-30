@@ -54,11 +54,11 @@ This chatbot is built to improve user experience by providing quick, accessible 
 
 ## Project Structure
 
-├── index.html # Main HTML page
-├── chatbot.css # Stylesheet for chatbot and site
-├── chatbot.js # JavaScript functionality for chatbot interactions
-├── chatbot.png # Chatbot icon image
-└── README.md # Project documentation
+index.html # Main HTML page
+chatbot.css # Stylesheet for chatbot and site
+chatbot.js # JavaScript functionality for chatbot interactions
+chatbot.png # Chatbot icon image
+README.md # Project documentation
 ---
 
 ## Contributing
@@ -84,9 +84,8 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 For questions or feedback, please reach out:
 
-- Email: info@educationinstitute.com  
-- Website: https://indsearch.org  
-- GitHub: [your-username](https://github.com/your-username)  
+- Email: deepakpatle757@gmail.com 
+- GitHub: https://github.com/deepakpatle757  
 
 ---
 
