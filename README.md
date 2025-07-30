@@ -54,11 +54,11 @@ This chatbot is built to improve user experience by providing quick, accessible 
 
 ## Project Structure
 
-index.html # Main HTML page
-chatbot.css # Stylesheet for chatbot and site
-chatbot.js # JavaScript functionality for chatbot interactions
-chatbot.png # Chatbot icon image
-README.md # Project documentation
+-index.html # Main HTML page
+-chatbot.css # Stylesheet for chatbot and site
+-chatbot.js # JavaScript functionality for chatbot interactions
+-chatbot.png # Chatbot icon image
+-README.md # Project documentation
 ---
 
 ## Contributing
